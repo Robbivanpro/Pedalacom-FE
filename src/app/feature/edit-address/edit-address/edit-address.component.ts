@@ -40,37 +40,42 @@ export class EditAddressComponent implements OnInit, OnDestroy {
     })
   }
 
-  // onFormSubmit():void{
-  //   const updateAddressRequest :UpdateAddressRequest = {
+  onFormSubmit():void{
+    const updateAddressRequest :UpdateAddressRequest = {
 
-  //     addressLine1 : this.address?.addressLine1?? '',
-  //     addressLine2:this.address?.addressLine2??'',
-  //     city:this.address?.city??'',
-  //     stateProvince:this.address?.stateProvince??'',
-  //     countryRegion:this.address?.countryRegion??'',
-  //     postalCode:this.address?.postalCode??'',
+      addressLine1 : this.address?.addressLine1?? '',
+      addressLine2:this.address?.addressLine2??'',
+      city:this.address?.city??'',
+      stateProvince:this.address?.stateProvince??'',
+      countryRegion:this.address?.countryRegion??'',
+      postalCode:this.address?.postalCode??'',
 
 
-  //   };
+    };
 
-  //   if(this.id){
-  //     this.editAddressSubscription = this.addressService.updateAddressRequest(this.id, updateAddressRequest)
-  //     .subscribe({
-  //       next:()=>{
-  //         this.router.navigateByUrl('/admin/address');
-  //       }
+    if(this.id){
+      this.editAddressSubscription = this.addressService.updateAddressRequest(this.id, updateAddressRequest)
+      .subscribe({
+        next:()=>{
+          this.router.navigateByUrl('/admin/address');
+        }
 
-  // })
-  //   }
-  // }
-
-  onFormSubmit ():void{
-    console.log(this.address)
+  })
+    }
   }
+
+  // onFormSubmit ():void{
+  //   console.log(this.address)
+  // }
 
   
   ngOnDestroy(): void {
     this.paramsSubscription?.unsubscribe();
+
+    if (this.editAddressSubscription) {
+      this.editAddressSubscription.unsubscribe();
   }
+}
+  
 }
 
