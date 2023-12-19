@@ -9,6 +9,8 @@ import { AddAddressComponent } from './feature/add-address/add-address.component
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { EditAddressComponent } from './feature/edit-address/edit-address/edit-address.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 
@@ -19,6 +21,8 @@ import { EditAddressComponent } from './feature/edit-address/edit-address/edit-a
     AddressListComponent,
     AddAddressComponent,
     EditAddressComponent,
+    FooterComponent,
+    HomepageComponent,
     
   ],
   imports: [
