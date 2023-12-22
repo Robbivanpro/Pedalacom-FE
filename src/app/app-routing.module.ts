@@ -3,8 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddressListComponent } from './feature/address/address-list/address-list.component';
 import { AddAddressComponent } from './feature/add-address/add-address.component';
 import { EditAddressComponent } from './feature/edit-address/edit-address/edit-address.component';
+import { CarrelloComponent } from './carrello/carrello.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    component:HomepageComponent,
+  },
+  {
+    path:'carrello',
+    component:CarrelloComponent,
+  },
   {
     path:'admin/address',
     component:AddressListComponent,

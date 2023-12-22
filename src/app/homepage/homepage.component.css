@@ -50,6 +50,11 @@
     padding: 30px;
 }
 
+#product1 .card:hover{
+  box-shadow:  10px 10px rgba(0, 0, 0, 0.02);
+  transition: 0.5s ease;
+}
+
 #product1 .pro-container{
     display: flex;
     justify-content: space-between;
@@ -525,6 +530,156 @@ button.white:hover{
     transition: 0.2s ease;
 }
 
+#newsletter {
+  padding: 20px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+ 
+  background-position: 20% 30%;
+  background-color: #041e42;
+
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newsletter p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newsletter p span {
+  font-size: 16px;
+  color: #ffbd27;
+  
+}
+
+#newsletter input{
+  height: 3.1;
+}
+
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
+#newsletter button{
+
+  background-color: grey;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button:hover{
+  
+  background-color: orange
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding:  0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+
+
+/*tablet*/
+@media (max-width: 799px) {
+
+  #product1 .card{
+    margin: 15px;
+    
+  }
+
+  #product1 .pro-container{
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  #banner {
+    height: 20vh;
+
+  }
+
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+    
+    margin: 10px;
+  }
+
+  #newsletter .form{
+    width: 70%;
+
+  }
+
+
+}
+
+/* Telefono */
+
+@media (max-width: 477px) {
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+
+  #feature .card_o {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 5px;
+    
+  }
+
+  #feature .fe-box{
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #product1 .pro{
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box2 {
+    height: 40vh;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  #newsletter .form{
+    width: 100%;
+  }
+
+
+
+}
 
 
 

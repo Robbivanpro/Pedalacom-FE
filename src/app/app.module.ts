@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { EditAddressComponent } from './feature/edit-address/edit-address/edit-address.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { CarrelloComponent } from './carrello/carrello.component';
 
 
 
@@ -23,6 +24,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     EditAddressComponent,
     FooterComponent,
     HomepageComponent,
+    CarrelloComponent
     
   ],
   imports: [
