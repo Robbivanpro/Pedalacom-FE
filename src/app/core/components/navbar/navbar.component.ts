@@ -18,4 +18,12 @@ export class NavbarComponent {
 
   }
 
+  eseguiAzioneS():void {
+    console.log('Navigazione verso il carrello eseguita');
+  
+    this.router.navigate(['/shop']);
+    
+
+}
+
 }

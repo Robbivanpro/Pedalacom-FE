@@ -24,11 +24,21 @@
     justify-content: space-between;
     padding: 20px 80px;
     background: rgb(5, 186, 5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 5px 10px rgb(83, 83, 83);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
+}
+
+.navbar .container-fluid a i{
+    color: white;
+
+}
+
+.navbar .container-fluid a i:hover {
+    color: orange;
+    transition: 0.2s ease-in;
 }
 
 .navbar li{
@@ -40,6 +50,7 @@
     font-size: 18px;
     font-weight: 600;
     transition: 0.3 ease;
+    
 }
 
 

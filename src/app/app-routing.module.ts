@@ -5,6 +5,8 @@ import { AddAddressComponent } from './feature/add-address/add-address.component
 import { EditAddressComponent } from './feature/edit-address/edit-address/edit-address.component';
 import { CarrelloComponent } from './carrello/carrello.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ShopComponent } from './shop/shop.component';
+import { SproductComponent } from './sproduct/sproduct.component';
 
 const routes: Routes = [
   {
@@ -14,6 +16,14 @@ const routes: Routes = [
   {
     path:'carrello',
     component:CarrelloComponent,
+  },
+  {
+    path:'shop',
+    component:ShopComponent,
+  },
+  {
+    path:'sproduct',
+    component:SproductComponent,
   },
   {
     path:'admin/address',

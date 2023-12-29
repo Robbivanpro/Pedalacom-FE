@@ -9,12 +9,22 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Prodotti</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Contatti</a>
+          </li>
           
           
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu
             </a>
+            
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Registrazione</a></li>
               <li><a class="dropdown-item" href="#">Login</a></li>
@@ -30,10 +40,9 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      <button class="btn btn-outline-success" (click)="eseguiAzione()" [routerLink]="['/carrello']">Carrello</button>
-
-      <a href="#"><i class="bi bi-cart"></i></a>
      
+      <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+      
       
     </div>
     

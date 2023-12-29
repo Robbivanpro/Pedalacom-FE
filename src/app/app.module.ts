@@ -12,6 +12,8 @@ import { EditAddressComponent } from './feature/edit-address/edit-address/edit-a
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CarrelloComponent } from './carrello/carrello.component';
+import { ShopComponent } from './shop/shop.component';
+import { SproductComponent } from './sproduct/sproduct.component';
 
 
 
@@ -24,7 +26,9 @@ import { CarrelloComponent } from './carrello/carrello.component';
     EditAddressComponent,
     FooterComponent,
     HomepageComponent,
-    CarrelloComponent
+    CarrelloComponent,
+    ShopComponent,
+    SproductComponent
     
   ],
   imports: [
