@@ -1,4 +1,4 @@
-export class Address{
+export class Prodotto {
   productId: number = 0
   name: string = ""
   productNumber: string = ""

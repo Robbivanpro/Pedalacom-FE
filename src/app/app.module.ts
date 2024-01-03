@@ -14,6 +14,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CarrelloComponent } from './carrello/carrello.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
+import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
 
 
 
@@ -28,7 +29,8 @@ import { SproductComponent } from './sproduct/sproduct.component';
     HomepageComponent,
     CarrelloComponent,
     ShopComponent,
-    SproductComponent
+    SproductComponent,
+    NewprodottoComponent
     
   ],
   imports: [

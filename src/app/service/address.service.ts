@@ -13,8 +13,20 @@ import { UpdateAddressRequest } from 'src/app/models/edit-address-request.model'
 })
 export class AddressService {
 
+  list: Address[]=[]
   constructor(private http: HttpClient) { }
 
+  RichiestaGet(): void{
+   this.http.get("url").subscribe({
+    next: res => {
+      this.list = res as Address[];
+    },
+    error: err => { console.log(err)}
+
+   })
+
+
+  }
 
   addAddress(model: AddAddressRequest): Observable<any> {
     return this.http.post<any>('https://localhost:44322/api/Addresses', model);
