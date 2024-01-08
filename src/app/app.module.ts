@@ -15,7 +15,7 @@ import { CarrelloComponent } from './carrello/carrello.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
-
+import { ImageSelectorComponent } from './shared/components/image-selector/image-selector.component';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.compone
     CarrelloComponent,
     ShopComponent,
     SproductComponent,
-    NewprodottoComponent
+    NewprodottoComponent,
+    ImageSelectorComponent
     
   ],
   imports: [

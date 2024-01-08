@@ -40,10 +40,10 @@ export class EditAddressComponent implements OnInit, OnDestroy {
     })
   }
 
-  onFormSubmit():void{
+ /* onFormSubmit():void{
     const updateAddressRequest :UpdateAddressRequest = {
 
-      addressLine1 : this.address?.addressLine1?? '',
+      addressLine1 : this.address?.productId?? '',
       addressLine2:this.address?.addressLine2??'',
       city:this.address?.city??'',
       stateProvince:this.address?.stateProvince??'',
@@ -52,6 +52,7 @@ export class EditAddressComponent implements OnInit, OnDestroy {
 
 
     };
+    
 
     if(this.id){
       this.editAddressSubscription = this.addressService.updateAddressRequest(this.id, updateAddressRequest)
@@ -63,10 +64,11 @@ export class EditAddressComponent implements OnInit, OnDestroy {
   })
     }
   }
+  */
 
-  // onFormSubmit ():void{
-  //   console.log(this.address)
-  // }
+   onFormSubmit ():void{
+     console.log(this.address)
+   }
 
   
   ngOnDestroy(): void {
