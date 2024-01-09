@@ -7,6 +7,8 @@ import { CarrelloComponent } from './carrello/carrello.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
+import { CheckoutComponent } from './carrello/checkout/checkout.component';
+
 
 const routes: Routes = [
   {
@@ -17,6 +19,11 @@ const routes: Routes = [
     path:'carrello',
     component:CarrelloComponent,
   },
+  {
+    path:'checkout',
+    component:CheckoutComponent,
+  },
+  
   {
     path:'shop',
     component:ShopComponent,
