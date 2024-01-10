@@ -16,6 +16,8 @@ import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
 import { ImageSelectorComponent } from './shared/components/image-selector/image-selector.component';
+import { CustomerComponent } from './customer/customer.component';
+import { ScustomerComponent } from './scustomer/scustomer.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { ImageSelectorComponent } from './shared/components/image-selector/image
     ShopComponent,
     SproductComponent,
     NewprodottoComponent,
-    ImageSelectorComponent
+    ImageSelectorComponent,
+    CustomerComponent,
+    ScustomerComponent
     
   ],
   imports: [

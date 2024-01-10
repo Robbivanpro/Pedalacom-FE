@@ -10,26 +10,26 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+
   #hero h4 {
     padding-bottom: 15px;
     color: orange;
   }
-  
+
   #hero h2{
     color: white;
   }
-  
+
   #hero h1 {
     color: white;
   }
-  
+
   #hero p{
     color: white
   }
-  
+
   #hero button {
-    
+
     border: 0 ;
     border-radius: 6px;
     padding: 14px 80px 14px 65px;
@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: 15px;
   }
-  
+
   #hero button:hover {
     background-color: orange;
   }
@@ -60,7 +60,7 @@
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
-    
+
 }
 
 #product1 .pro{
@@ -75,9 +75,9 @@
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
-    
+
     background-size: cover;
-    
+
 }
 
 
@@ -88,7 +88,7 @@
 #product .pro img{
     width: 100%;
     border-radius: 20px;
-    
+
 }
 
 #product1 .pro .des {
@@ -150,6 +150,37 @@
     color: #fff;
     font-weight: 600;
     margin-left: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+thead th {
+  padding: 8px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e2e2e2;
+}
+
+tbody td {
+  padding: 8px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
 }
 
 

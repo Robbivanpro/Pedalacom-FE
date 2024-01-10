@@ -5,9 +5,9 @@
 <section id="prodetails" class="section-p1">
     <div class="single-pro-image">
         <div class="img-internal">
-            
+
             <img src="" id="MainImg" alt="">
-        </div>  
+        </div>
         <div class="small-img-group">
             <div class="small-img-col">
                 <img src="src\img\bici2.jpg" class="small-img" alt="">
@@ -24,10 +24,12 @@
         </div>
     </div>
 
-    <div class="single-pro-details">
-        <h6>Bike nr.123</h6>
-        <h4>Men's Bike</h4>
-        <h2>£779.00</h2>
+
+    <div  *ngIf="responsedata">
+         <p>Nome:<strong> {{responsedata.name}}</strong></p>
+         <p>Colore: <strong> {{responsedata.color}}</strong></p>
+         <p>Prezzo: <strong>{{responsedata.listPrice}}$</strong></p>
+
         <h6>Seleziona Modello: </h6>
         <select >
             <option></option>
@@ -42,7 +44,7 @@
         <h4>Dettagli prodotto</h4>
         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptas amet temporibus at reiciendis repellat, maxime dolor quod. Vel facere nisi nihil doloremque temporibus dolorem delectus iure? Doloremque, tenetur ullam.</span>
     </div>
-</section>
+
 
 
 
@@ -94,7 +96,7 @@
                 </button>
             </div>
         </div>
-        
+
     </div>
 
 </section>

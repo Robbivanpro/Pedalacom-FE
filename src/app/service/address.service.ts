@@ -17,14 +17,13 @@ export class AddressService {
   constructor(private http: HttpClient) { }
 
   RichiestaGet(): void{
-   this.http.get("url").subscribe({
+   this.http.get('https://localhost:44322/api/Addresses').subscribe({
     next: res => {
       this.list = res as Address[];
     },
     error: err => { console.log(err)}
 
    })
-
 
   }
 

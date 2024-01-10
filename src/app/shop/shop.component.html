@@ -2,18 +2,36 @@
 <!-- HERO -->
 
 <section id="hero">
-    
+
     <h2>Super value deals</h2>
     <h1>On all products</h1>
     <p>trade in offer</p>
-    
+
 </section>
 
 
 <!--PRODUCTS-->
 
 <section id="product1" class="section-p1">
-   
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrizione</th>
+        <th>Prezzo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pd of requestservice.list">
+        <td>{{pd.name}}</td>
+        <td>{{pd.color}}</td>
+        <td>{{pd.listPrice}}$</td>
+        <button (click)="viewProductDetails(pd.productId)">Clicca qui </button>
+      </tr>
+    </tbody>
+  </table>
+   <!--
     <div class="pro-container">
         <div class="card">
             <div class="card-img"><div class="img"></div></div>
@@ -82,7 +100,7 @@
             </div>
         </div>
     </div>
-
+  -->
 </section>
 
 <!-- Pagination -->

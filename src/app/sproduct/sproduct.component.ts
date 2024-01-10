@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdottoService } from '../service/prodotto.service';
 import { Prodotto } from '../model/prodotto';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-sproduct',
@@ -8,15 +9,27 @@ import { Prodotto } from '../model/prodotto';
   styleUrls: ['./sproduct.component.css']
 })
 export class SproductComponent implements OnInit {
-
-  constructor(private requestservice : ProdottoService){}
+   responsedata :any;
+  constructor(private requestservice : ProdottoService,private route: ActivatedRoute){}
 
   ngOnInit(): void {
-    this.requestservice.RichiestaGet();
+   // this.requestservice.RichiestaGet();
     //controllare la policy nel back-end
+    this.route.params.subscribe(params => {
+     const productId = +params['id'];
 
+    this.requestservice.getProductById(productId).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.responsedata = response; // Assegna il prodotto ottenuto dalla risposta dell'API
+      },
+      (error: any) => {
+        console.error('Errore durante il recupero dei dettagli del prodotto:', error);
+      }
+    );
 
-  }
+  });
+}
 
   OnDelete(id: number){
     this.requestservice.onDelete(id)

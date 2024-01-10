@@ -7,6 +7,8 @@ import { CarrelloComponent } from './carrello/carrello.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
+import { CustomerComponent } from './customer/customer.component';
+import { ScustomerComponent } from './scustomer/scustomer.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,19 @@ const routes: Routes = [
   {
     path:'admin/address/:id',
     component:EditAddressComponent,
+  },
+  {
+    path:'product/:id',
+    component:SproductComponent
+  },
+  {
+    path: 'clienti',
+    component:CustomerComponent
+
+  },
+  {
+    path: 'cliente/:id',
+    component:ScustomerComponent
   }
 ];
 
