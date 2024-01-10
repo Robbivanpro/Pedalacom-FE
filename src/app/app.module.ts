@@ -18,6 +18,10 @@ import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.compone
 import { ImageSelectorComponent } from './shared/components/image-selector/image-selector.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
+import { CheckoutComponent } from './carrello/checkout/checkout.component';
+
+
+
 
 
 @NgModule({
@@ -35,8 +39,10 @@ import { ScustomerComponent } from './scustomer/scustomer.component';
     NewprodottoComponent,
     ImageSelectorComponent,
     CustomerComponent,
-    ScustomerComponent
-    
+    ScustomerComponent,
+
+
+
   ],
   imports: [
     BrowserModule,

@@ -43,7 +43,9 @@
     background-color: orange;
   }
 
-
+#product1 .pro-container .card .card-img{
+  background-image: url("src\img\bici4.jpg");
+}
 
   #product1 {
     text-align: center;
