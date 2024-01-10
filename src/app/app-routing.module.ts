@@ -8,8 +8,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
-import { CustomerComponent } from './customer/customer.component';
+import { CustomerComponent } from './CustomerModel/customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
+import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
+import { NewCustomerComponent } from './CustomerModel/new-customer/new-customer.component';
 
 const routes: Routes = [
   {
@@ -57,6 +59,14 @@ const routes: Routes = [
   {
     path: 'cliente/:id',
     component:ScustomerComponent
+  },
+  {
+    path: 'newproduct',
+    component:NewprodottoComponent
+  },
+  {
+    path: 'newcustomer',
+    component:NewCustomerComponent
   }
 ];
 

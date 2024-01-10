@@ -1,0 +1,32 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div>
+    <label for="firstName">Nome:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="newcustomer.firstName" required>
+  </div>
+  <div>
+    <label for="ProductNumber">Cognome:</label>
+    <input type="text" id="ProductNumber" name="ProductNumber" [(ngModel)]="newcustomer.lastName" required>
+  </div>
+  <div>
+    <label for="color">Colore:</label>
+    <input type="text" id="color" name="color" [(ngModel)]="newcustomer.companyName" required>
+  </div>
+  <div>
+    <label for="standardCost">standardCost:</label>
+    <input type="text" id="standardCost" name="standardCost" [(ngModel)]="newcustomer.emailAddress" required>
+  </div>
+  <div>
+    <label for="listPrice">listPrice:</label>
+    <input type="text" id="email" name="listPrice" [(ngModel)]="newcustomer.title" required>
+  </div>
+  <div>
+    <label for="size">size:</label>
+    <input type="text" id="size" name="size" [(ngModel)]="newcustomer.middleName" required>
+  </div>
+  <div>
+    <label for="weight">weight:</label>
+    <input type="text" id="weight" name="weight" [(ngModel)]="newcustomer.nameStyle" required>
+  </div>
+
+  <button type="submit">Invia</button>
+</form>
