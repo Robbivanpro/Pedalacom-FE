@@ -10,6 +10,9 @@ import { SproductComponent } from './sproduct/sproduct.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { CategorieComponent } from './categorie/categorie.component';
 
 const routes: Routes = [
   {
@@ -17,14 +20,25 @@ const routes: Routes = [
     component:HomepageComponent,
   },
   {
+    path:'Categorie',
+    component:CategorieComponent,
+  },
+  {
     path:'carrello',
     component:CarrelloComponent,
+  },
+  {
+    path:'login',
+    component:LoginComponent,
+  },
+  {
+    path:'registrazione',
+    component:RegistrazioneComponent,
   },
   {
     path:'checkout',
     component:CheckoutComponent,
   },
-
   {
     path:'shop',
     component:ShopComponent,

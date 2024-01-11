@@ -19,7 +19,8 @@ import { ImageSelectorComponent } from './shared/components/image-selector/image
 import { CustomerComponent } from './customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
-
+import { CategorieComponent } from './categorie/categorie.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -39,9 +40,10 @@ import { CheckoutComponent } from './carrello/checkout/checkout.component';
     NewprodottoComponent,
     ImageSelectorComponent,
     CustomerComponent,
+    CheckoutComponent,
     ScustomerComponent,
-
-
+    CategorieComponent,
+    SidebarComponent,
 
   ],
   imports: [

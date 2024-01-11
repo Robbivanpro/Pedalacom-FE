@@ -14,14 +14,15 @@
             <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Prodotti</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">About</a>
+            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneP()" [routerLink]="['/Clienti']">Clienti</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneC()" [routerLink]="['/Categorie']">Categorie</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Contatti</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneP()" [routerLink]="['/Clienti']">Clienti</a>
-          </li>
+          
 
 
 
@@ -31,8 +32,8 @@
             </a>
 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Registrazione</a></li>
-              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="/registrazione">Registrazione</a></li>
+              <li><a class="dropdown-item" href="/login">Login</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" [routerLink]="['/admin/address']">Indirizzi</a></li>
             </ul>
