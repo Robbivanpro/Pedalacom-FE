@@ -16,11 +16,10 @@ import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
 import { ImageSelectorComponent } from './shared/components/image-selector/image-selector.component';
-import { CustomerComponent } from './customer/customer.component';
+import { CustomerComponent } from './CustomerModel/customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
-import { CategorieComponent } from './categorie/categorie.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 
 
@@ -42,8 +41,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CustomerComponent,
     CheckoutComponent,
     ScustomerComponent,
-    CategorieComponent,
-    SidebarComponent,
+
+
 
   ],
   imports: [

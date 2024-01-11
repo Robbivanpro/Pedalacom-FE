@@ -26,4 +26,8 @@ getCustomerById(customerId: number): Observable<any> {
   const url = `https://localhost:44322/api/Customers/${customerId}`; // Sostituisci con il percorso effettivo per getById
   return this.http.get<any>(url);
 }
+
+postCustomer(data:any):Observable<any>{
+  return this.http.post('https://localhost:44322/api/Customers',data)
+  }
 }

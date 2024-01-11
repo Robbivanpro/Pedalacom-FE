@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdottoService } from '../service/prodotto.service';
 import { Prodotto } from '../model/prodotto';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sproduct',
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SproductComponent implements OnInit {
    responsedata :any;
-  constructor(private requestservice : ProdottoService,private route: ActivatedRoute){}
+  constructor(private requestservice : ProdottoService,private route: ActivatedRoute,private router: Router){}
 
   ngOnInit(): void {
    // this.requestservice.RichiestaGet();
@@ -39,6 +39,8 @@ export class SproductComponent implements OnInit {
       }
     })
   }
+
+
 
  /*var MainImg = document.getElementById("MainImg");
   var smallImg = document.getElementsByClassName("small-img");

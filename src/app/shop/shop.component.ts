@@ -25,6 +25,9 @@ export class ShopComponent implements OnInit{
   viewProductDetails(productId: number): void {
     this.route.navigate(['/product', productId]);
   }
+  NavigaSingolo(){
+    this.route.navigate(['/newproduct'])
+  }
 
   getProductDetails(productId: number): void {
     this.requestservice.getProductById(productId).subscribe(

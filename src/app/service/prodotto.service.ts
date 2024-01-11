@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { Prodotto } from '../model/prodotto';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdottoService {
   list: Prodotto[]=[]
+  data: Product[]=[]
   constructor(private http: HttpClient) { }
 
   RichiestaGet():void{
@@ -25,8 +27,8 @@ export class ProdottoService {
     return this.http.get<any>(url);
   }
 
-   postProdotti(){
-   return this.http.post("url del form",{})
+   postProdotti(data:any):Observable<any>{
+   return this.http.post('https://localhost:44322/api/Products',data)
    }
 
    onDelete(id:number){

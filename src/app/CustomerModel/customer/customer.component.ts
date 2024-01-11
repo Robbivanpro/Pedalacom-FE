@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../service/customer.service';
+import { CustomerService } from '../../service/customer.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,8 +18,14 @@ export class CustomerComponent implements OnInit{
 
   }
 
+
+
   viewProductDetails(customerId: number): void {
     this.route.navigate(['/cliente', customerId]);
+  }
+
+  NavigaSingolo(){
+    this.route.navigate(['/newcustomer'])
   }
 
   getProductDetails(customerId: number): void {
