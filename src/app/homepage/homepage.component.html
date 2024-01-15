@@ -17,14 +17,14 @@
 <!-- VETRINA PRODOTTI -->
 
 <section id="feature">
-    <div class="card-container">    
+    <div class="card-container">
     <div class="card_o">
         <div class="image">
             <img src="" alt=""></div>
           <span class="title">Cool Chair</span>
           <span class="price">$100</span>
         </div>
-    <div class="card_o"> 
+    <div class="card_o">
     <div class="image image2"><span class="text"></span></div>
           <span class="title">Cool Bike</span>
           <span class="price">$100</span>
@@ -45,7 +45,7 @@
             <span class="price">$200</span>
         </div>
 </div>
-    
+
 </section>
 
 <!--PRODUCTS-->
@@ -56,7 +56,29 @@
     <div class="pro-container" onclick="window.location.href='sproduct'">
         <div class="card" >
             <div class="card-img"><div class="img"></div></div>
-            <div class="card-title">Product title</div>
+            <div class="card-title" *ngIf="responsedata1">{{responsedata1.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata1">{{responsedata1.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata1"><span>$</span> {{responsedata1.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata2">{{responsedata2.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata2">{{responsedata2.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata2"><span>$</span> {{responsedata2.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata3">{{responsedata3.name}}</div>
             <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             <div class="card-footer">
                 <div class="card-price"><span>$</span> 123.45</div>
@@ -67,29 +89,7 @@
         </div>
         <div class="card">
             <div class="card-img"><div class="img"></div></div>
-            <div class="card-title">Product title</div>
-            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <div class="card-footer">
-                <div class="card-price"><span>$</span> 123.45</div>
-                <button class="card-btn">
-                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                </button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img"><div class="img"></div></div>
-            <div class="card-title">Product title</div>
-            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <div class="card-footer">
-                <div class="card-price"><span>$</span> 123.45</div>
-                <button class="card-btn">
-                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                </button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-img"><div class="img"></div></div>
-            <div class="card-title">Product title</div>
+            <div class="card-title" *ngIf="responsedata4">{{responsedata4.name}}</div>
             <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
             <div class="card-footer">
                 <div class="card-price"><span>$</span> 123.45</div>
@@ -140,7 +140,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h4>$5500</h4>
-              
+
             </div>
             <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
         </div>
@@ -155,7 +155,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h4>$5500</h4>
-                
+
             </div>
             <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
         </div>
@@ -170,7 +170,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h4>$5500</h4>
-                
+
             </div>
             <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
         </div>
@@ -201,13 +201,13 @@
         <h2>....</h2>
         <span></span>
         <button class="white">Esplora offerte</button>
-    </div> 
+    </div>
     <div class="banner-box">
         <h4>Offerte</h4>
         <h2>....</h2>
         <span></span>
         <button class="white">Esplora offerte</button>
-    </div> 
+    </div>
 
 
 
