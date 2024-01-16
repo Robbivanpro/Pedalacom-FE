@@ -34,7 +34,7 @@ export class HomepageComponent implements OnInit{
         console.error('Errore durante il recupero dei dettagli del prodotto:', error);
       }
     );
-    this.prodottoservice.getProductById(710).subscribe(
+    this.prodottoservice.getProductById(713).subscribe(
       (response: any) => {
         console.log(response);
         this.responsedata3 = response; // Assegna il prodotto ottenuto dalla risposta dell'API
@@ -47,6 +47,15 @@ export class HomepageComponent implements OnInit{
       (response: any) => {
         console.log(response);
         this.responsedata4 = response; // Assegna il prodotto ottenuto dalla risposta dell'API
+      },
+      (error: any) => {
+        console.error('Errore durante il recupero dei dettagli del prodotto:', error);
+      }
+    );
+    this.prodottoservice.getProductById(720).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.responsedata5 = response; // Assegna il prodotto ottenuto dalla risposta dell'API
       },
       (error: any) => {
         console.error('Errore durante il recupero dei dettagli del prodotto:', error);

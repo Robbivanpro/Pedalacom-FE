@@ -79,9 +79,9 @@
         <div class="card">
             <div class="card-img"><div class="img"></div></div>
             <div class="card-title" *ngIf="responsedata3">{{responsedata3.name}}</div>
-            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-subtitle" *ngIf="responsedata3">{{responsedata3.color}}</div>
             <div class="card-footer">
-                <div class="card-price"><span>$</span> 123.45</div>
+                <div class="card-price" *ngIf="responsedata3"><span>$</span> {{responsedata3.standardCost}}</div>
                 <button class="card-btn">
                     <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
                 </button>
@@ -90,25 +90,27 @@
         <div class="card">
             <div class="card-img"><div class="img"></div></div>
             <div class="card-title" *ngIf="responsedata4">{{responsedata4.name}}</div>
-            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-subtitle" *ngIf="responsedata4">{{responsedata4.color}}</div>
             <div class="card-footer">
-                <div class="card-price"><span>$</span> 123.45</div>
+                <div class="card-price" *ngIf="responsedata4" ><span>$</span>{{responsedata4.standardCost}}</div>
                 <button class="card-btn">
                     <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
                 </button>
             </div>
         </div>
+        <!--
         <div class="card">
             <div class="card-img"><div class="img"></div></div>
-            <div class="card-title">Product title</div>
-            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-title" *ngIf="responsedata5">{{responsedata5.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata5" >{{responsedata5.color}}</div>
             <div class="card-footer">
-                <div class="card-price"><span>$</span> 123.45</div>
+                <div class="card-price" *ngIf="responsedata5"><span>$</span> {{responsedata5.color}}</div>
                 <button class="card-btn">
                     <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
                 </button>
             </div>
         </div>
+      -->
     </div>
 
 </section>

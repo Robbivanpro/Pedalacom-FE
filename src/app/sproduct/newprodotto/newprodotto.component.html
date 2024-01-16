@@ -1,32 +1,35 @@
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-  <div>
-    <label for="firstName">Nome:</label>
-    <input type="text" id="firstName" name="firstName" [(ngModel)]="newProduct.name" required>
-  </div>
-  <div>
-    <label for="ProductNumber">Cognome:</label>
-    <input type="text" id="ProductNumber" name="ProductNumber" [(ngModel)]="newProduct.productNumber" required>
-  </div>
-  <div>
-    <label for="color">Colore:</label>
-    <input type="text" id="color" name="color" [(ngModel)]="newProduct.color" required>
-  </div>
-  <div>
-    <label for="standardCost">standardCost:</label>
-    <input type="number" id="standardCost" name="standardCost" [(ngModel)]="newProduct.standardCost" required>
-  </div>
-  <div>
-    <label for="listPrice">listPrice:</label>
-    <input type="number" id="email" name="listPrice" [(ngModel)]="newProduct.listPrice" required>
-  </div>
-  <div>
-    <label for="size">size:</label>
-    <input type="text" id="size" name="size" [(ngModel)]="newProduct.size" required>
-  </div>
-  <div>
-    <label for="weight">weight:</label>
-    <input type="number" id="weight" name="weight" [(ngModel)]="newProduct.weight" required>
-  </div>
+<h1 class="mt-3">Aggiungi Nuovo Indirizzo</h1>
 
-  <button type="submit">Invia</button>
-</form>
+
+    <form #userform="ngForm" (ngSubmit)="onSubmit()">
+        <div class="mt-2">
+            <div class="mt-3">
+                <label class="form-label">Nome</label>
+                <input type="text" id="addressLine1" class="form-control" name="addressLine1" [(ngModel)]="model.FirstName">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Indirizzo 2</label>
+                <input type="text" id="addressLine2" class="form-control" name="addressLine2" [(ngModel)]="model.LastName">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Città</label>
+                <input type="text" id="city" class="form-control" name="city" [(ngModel)]="model.Namestyle">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Stato</label>
+                <input type="text" id="stateProvince" class="form-control" name="stateProvince" [(ngModel)]="model.CompanyName">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Regione</label>
+                <input type="text" id="countryRegion" class="form-control" name="countryRegion" [(ngModel)]="model.Phone">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Codice Postale</label>
+                <input type="text" id="postalCode" class="form-control" name="postalCode" [(ngModel)]="model.EmailAddress">
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Salva</button>
+            </div>
+        </div>
+
+    </form>
