@@ -28,10 +28,4 @@ export class NavbarComponent {
   this.router.navigate(['/clienti'])
  }
 
- eseguiAzioneC():void{
-  console.log('Navigazione riuscita')
-
-  this.router.navigate(['/Categorie'])
- }
-
 }

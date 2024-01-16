@@ -8,18 +8,18 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
-import { CustomerComponent } from './CustomerModel/customer/customer.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
+
 
 const routes: Routes = [
   {
     path:'',
     component:HomepageComponent,
   },
-  {
-    path:'Categorie',
-    component:CategorieComponent,
-  },
+ 
   {
     path:'carrello',
     component:CarrelloComponent,
@@ -60,11 +60,7 @@ const routes: Routes = [
     path:'product/:id',
     component:SproductComponent
   },
-  {
-    path: 'clienti',
-    component:CustomerComponent
-
-  },
+  
   {
     path: 'cliente/:id',
     component:ScustomerComponent
@@ -73,10 +69,7 @@ const routes: Routes = [
     path: 'newproduct',
     component:NewprodottoComponent
   },
-  {
-    path: 'newcustomer',
-    component:NewCustomerComponent
-  }
+  
 ];
 
 @NgModule({

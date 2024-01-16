@@ -11,7 +11,7 @@
 
 
 <!--PRODUCTS-->
-<button (click)="NavigaSingolo()">Inserisci Prodotto</button>
+<button class="btn btn-success" (click)="NavigaSingolo()">Inserisci Prodotto</button>
 <section id="product1" class="section-p1">
 
   <table>
@@ -27,7 +27,7 @@
         <td>{{pd.name}}</td>
         <td>{{pd.color}}</td>
         <td>{{pd.listPrice}}$</td>
-        <button (click)="viewProductDetails(pd.productId)">Clicca qui </button>
+        <button class="btn btn-success" (click)="viewProductDetails(pd.productId)">Clicca qui </button>
       </tr>
     </tbody>
   </table>
