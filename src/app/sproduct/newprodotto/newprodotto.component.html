@@ -1,32 +1,29 @@
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="firstName">Nome:</label>
-    <input type="text" id="firstName" name="firstName" [(ngModel)]="newProduct.name" required>
+    <input type="text" id="FirstName" name="FirstName" [(ngModel)]="model.FirstName" required>
   </div>
   <div>
-    <label for="ProductNumber">Cognome:</label>
-    <input type="text" id="ProductNumber" name="ProductNumber" [(ngModel)]="newProduct.productNumber" required>
+    <label for="LastName">Cognome:</label>
+    <input type="text" id="LastName" name="LastName" [(ngModel)]="model.LastName" required>
   </div>
   <div>
     <label for="color">Colore:</label>
-    <input type="text" id="color" name="color" [(ngModel)]="newProduct.color" required>
+    <input type="text" id="Namestyle" name="Namestyle" [(ngModel)]="model.Namestyle" required>
   </div>
   <div>
-    <label for="standardCost">standardCost:</label>
-    <input type="number" id="standardCost" name="standardCost" [(ngModel)]="newProduct.standardCost" required>
+    <label for="CompanyName">CompanyName:</label>
+    <input type="number" id="CompanyName" name="CompanyName" [(ngModel)]="model.CompanyName" required>
   </div>
   <div>
-    <label for="listPrice">listPrice:</label>
-    <input type="number" id="email" name="listPrice" [(ngModel)]="newProduct.listPrice" required>
+    <label for="Phone">Phone:</label>
+    <input type="number" id="Phone" name="listPrice" [(ngModel)]="model.Phone" required>
   </div>
   <div>
-    <label for="size">size:</label>
-    <input type="text" id="size" name="size" [(ngModel)]="newProduct.size" required>
+    <label for="EmailAddress">EmailAddress:</label>
+    <input type="text" id="EmailAddress" name="EmailAddress" [(ngModel)]="model.EmailAddress" required>
   </div>
-  <div>
-    <label for="weight">weight:</label>
-    <input type="number" id="weight" name="weight" [(ngModel)]="newProduct.weight" required>
-  </div>
+  
 
   <button type="submit">Invia</button>
 </form>

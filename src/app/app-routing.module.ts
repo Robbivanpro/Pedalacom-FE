@@ -9,6 +9,9 @@ import { ShopComponent } from './shop/shop.component';
 import { SproductComponent } from './sproduct/sproduct.component';
 import { CheckoutComponent } from './carrello/checkout/checkout.component';
 import { ScustomerComponent } from './scustomer/scustomer.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { NewprodottoComponent } from './sproduct/newprodotto/newprodotto.component';
 
 const routes: Routes = [
   {
@@ -67,7 +70,7 @@ const routes: Routes = [
   },
   {
     path: 'newcustomer',
-    component:NewCustomerComponent
+    component:ScustomerComponent
   }
 ];
 
