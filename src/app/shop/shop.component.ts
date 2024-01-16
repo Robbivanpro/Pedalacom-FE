@@ -16,7 +16,7 @@ export class ShopComponent implements OnInit{
 
   ngOnInit(): void {
     this.requestservice.RichiestaGet();
-    //controllare la policy nel back-end
+    //controllare la policy nel back-en
 
 
 

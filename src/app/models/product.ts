@@ -1,7 +1,7 @@
 export class Product {
   constructor(CustomerID:number = 0,
-    Namestyle:boolean = true,
-    Title:string = "",
+
+    Title:string | undefined= "",
     FirstName:string = "",
     MiddleName:string = "",
     LastName:string = "",
@@ -10,12 +10,13 @@ export class Product {
     SalesPerson:string = "",
     EmailAddress:string = "",
     Phone:string = "",
-    PasswordHash:string = ""){
+    PasswordHash:string = ""
+    ){
 
   }
   CustomerID?:number = 0
   Namestyle?:boolean = true
-  Title:string = ""
+  Title?:string = ""
   FirstName:string = ""
   MiddleName:string = ""
   LastName:string = ""
@@ -24,5 +25,5 @@ export class Product {
   SalesPerson:string = ""
   EmailAddress:string = ""
   Phone:string = ""
-  PasswordHash:string = ""
+  PasswordHash?:string = ""
 }
