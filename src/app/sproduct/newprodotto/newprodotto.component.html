@@ -1,29 +1,41 @@
-<form #userForm="ngForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="firstName">Nome:</label>
-    <input type="text" id="FirstName" name="FirstName" [(ngModel)]="model.FirstName" required>
+<section id="grid_form">
+<div class="container">
+  <form class="form" #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="descr">INSERISCI PRODOTTO</div>
+    <div class="input">
+      <input type="text" id="FirstName" name="FirstName" [(ngModel)]="model.FirstName" required>
+        <label for="name">Nome</label>
+    </div>
+
+    <div class="input">
+        <input type="text" id="LastName" name="LastName" [(ngModel)]="model.LastName" required>     
+        <label for="Cognome">Cognome</label>
+    </div>
+    <div class="input">
+      <input type="text" id="Namestyle" name="Namestyle" [(ngModel)]="model.Namestyle" required>
+      <label for="namestyle">Name Style</label>
+    </div>
+    <div class="input">
+      <input type="number" id="CompanyName" name="CompanyName" [(ngModel)]="model.CompanyName" required>
+      <label for="companyname">Company Name</label>
   </div>
-  <div>
-    <label for="LastName">Cognome:</label>
-    <input type="text" id="LastName" name="LastName" [(ngModel)]="model.LastName" required>
-  </div>
-  <div>
-    <label for="color">Colore:</label>
-    <input type="text" id="Namestyle" name="Namestyle" [(ngModel)]="model.Namestyle" required>
-  </div>
-  <div>
-    <label for="CompanyName">CompanyName:</label>
-    <input type="number" id="CompanyName" name="CompanyName" [(ngModel)]="model.CompanyName" required>
-  </div>
-  <div>
-    <label for="Phone">Phone:</label>
+  <div class="input">
     <input type="number" id="Phone" name="listPrice" [(ngModel)]="model.Phone" required>
+    <label for="phone">Telefono</label>
   </div>
-  <div>
-    <label for="EmailAddress">EmailAddress:</label>
-    <input type="text" id="EmailAddress" name="EmailAddress" [(ngModel)]="model.EmailAddress" required>
+  <div class="input">
+    <input type="email" id="EmailAddress" name="EmailAddress" [(ngModel)]="model.EmailAddress" required>
+ <label for="e-mail">E-Mail</label>
   </div>
   
 
-  <button type="submit">Invia</button>
-</form>
+    <button>Invia</button>
+  </form>
+</div>
+
+
+</section>
+
+
+
+

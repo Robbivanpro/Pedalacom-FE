@@ -12,23 +12,20 @@
 }
 
 
-
-
 .product {
     display: flex;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid black;
     padding: 20px;
-    border: 1px solid #ccc;
     transition: background-color 0.2s ease-in; 
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     height: 27vh;
+    backdrop-filter: blur(5px);
 }
 
 .product:hover {
-    background-color:orange;
-    color: white; 
+    background-color:transparent;    
     transform: scale(1.1);
 }
 
@@ -49,6 +46,7 @@
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .total {
@@ -62,4 +60,22 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+/*-------*/
+
+#grid_cart{
+    padding: 30px;
+    text-align: center;
+    background-image: url("src\img\shop-bkg.jpg");
+    background-size: cover;
+}
+
+#grid_cart .card{
+    padding: 420px;
+    margin-left: 400px;
+    position: absolute;
+
+}
+

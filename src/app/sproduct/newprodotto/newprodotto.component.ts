@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CustomerComponent } from 'src/app/CustomerModel/customer/customer.component';
 import { Prodotto } from 'src/app/model/prodotto';
 import { Product } from 'src/app/models/product';
 import { ProdottoService } from 'src/app/service/prodotto.service';

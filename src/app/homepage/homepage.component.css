@@ -1,5 +1,6 @@
 #total-page{
   padding: 120px;
+  
 }
 
 #hero {
@@ -14,14 +15,11 @@
     justify-content: center;
     flex-direction: column;
   }
-  
-  #hero h4 {
-    padding-bottom: 15px;
-    color: orange;
-  }
+
   
   #hero h2{
     color: orange;
+    padding-bottom: 25px;
   }
   
   #hero h1 {

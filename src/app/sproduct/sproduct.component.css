@@ -1,7 +1,8 @@
 #prodetails {
     padding: 50px;
     margin-top: 20px;
-  
+    background-image: url("src\img\shop-bkg.jpg");
+    background-size: cover;
 }
 
 
@@ -197,9 +198,6 @@ border-radius: 6px;
     background-image: url("src\img\bici3.jpg");
     background-size: cover;
 }
-
-
-
 
 
 .card_o {
@@ -463,6 +461,11 @@ button.normal{
 button.normal:hover{
     background-color: orange;
     transition: 0.2s ease;
+}
+
+.pro-container .card .card-img .img{
+  background-size: cover;
+  background-image: url("src\img\bici5.jpg");
 }
 
 @media (max-width: 500px) {
